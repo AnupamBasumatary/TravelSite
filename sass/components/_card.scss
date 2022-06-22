@@ -12,6 +12,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
@@ -141,16 +142,24 @@
         transform: translate(-50%,-50%);
         width: 90%;
         text-align: center;
-        padding: 4rem;
     }
 
     &__price-box {
-        margin-bottom: 3rem;
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
     }
 
     &__price-value {
         font-size: 6rem;
+        font-weight: 100;
     }
+
     
 
 
@@ -191,7 +200,7 @@
         }
     
         &__price-box {
-            margin-bottom: 8rem;
+            margin-bottom: 3rem;
         }
     
         &__price-value {
